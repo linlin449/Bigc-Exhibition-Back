@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: system-manage
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+server:
+  port: 8081
