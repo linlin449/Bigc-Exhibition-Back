@@ -11,7 +11,7 @@
 
     <artifactId>common</artifactId>
     <properties>
-        <java.version>18</java.version>
+        <java.version>8</java.version>
         <spring-boot.starter.version>2.7.3</spring-boot.starter.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
