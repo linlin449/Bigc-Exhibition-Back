@@ -15,9 +15,31 @@
         <spring-boot.starter.version>2.7.3</spring-boot.starter.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <druid.version>1.2.11</druid.version>
         <nacos-discovery.version>2021.1</nacos-discovery.version>
     </properties>
     <dependencies>
+        <!--    mysql驱动    -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- alibaba druid -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+        <!--    mybatis-plus        -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+
         <!--    redis    -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

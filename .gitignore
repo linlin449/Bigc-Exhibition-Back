@@ -19,7 +19,6 @@ target/
 *.iml
 *.ipr
 **/target
-
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -30,3 +29,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+**/config/
+!**/src/**/config
