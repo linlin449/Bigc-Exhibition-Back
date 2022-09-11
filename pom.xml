@@ -17,7 +17,8 @@
         <module>gateway</module>
         <module>system</module>
         <module>common</module>
-        <module>auth</module>
+        <module>admin</module>
+        <module>activity</module>
     </modules>
 
     <build>

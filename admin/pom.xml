@@ -8,11 +8,11 @@
         <version>2.7.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>gateway</artifactId>
+    <groupId>cn.bigc</groupId>
+    <artifactId>admin</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gateway</name>
-    <description>gateway</description>
+    <name>admin</name>
+    <description>管理员服务</description>
     <properties>
         <java.version>8</java.version>
         <spring-cloud.version>2021.0.3</spring-cloud.version>
@@ -21,45 +21,19 @@
         <dependency>
             <groupId>cn.bigc</groupId>
             <artifactId>common</artifactId>
-            <exclusions>
-                <exclusion>
-                    <groupId>com.baomidou</groupId>
-                    <artifactId>mybatis-plus-boot-starter</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.alibaba</groupId>
-                    <artifactId>druid-spring-boot-starter</artifactId>
-                </exclusion>
-            </exclusions>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--    负载均衡    -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.projectreactor</groupId>
-            <artifactId>reactor-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
     <dependencyManagement>

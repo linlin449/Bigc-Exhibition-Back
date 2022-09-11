@@ -19,6 +19,17 @@
         <nacos-discovery.version>2021.1</nacos-discovery.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!--   验证码     -->
+        <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+
         <!--    mysql驱动    -->
         <dependency>
             <groupId>mysql</groupId>
@@ -67,7 +78,6 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>provided</scope>
         </dependency>
 
         <dependency>

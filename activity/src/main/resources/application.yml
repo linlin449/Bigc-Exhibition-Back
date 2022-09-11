@@ -2,7 +2,7 @@ spring:
   profiles:
     active: personal
   application:
-    name: system-manage
+    name: activity-manage
   cloud:
     nacos:
       server-addr: localhost:8848
@@ -16,4 +16,9 @@ spring:
     host: localhost
     port: 6379
 server:
-  port: 8081
+  port: 8083
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  type-aliases-package: cn.bigc.common.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

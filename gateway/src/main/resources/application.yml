@@ -7,8 +7,23 @@ spring:
     nacos:
       server-addr: localhost:8848
     gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins:
+              - "*"
+            allowed-methods:
+              - "*"
       routes:
-        - id: system-manage
+        - id: admin
+          uri: lb://admin-manage
+          predicates:
+            - Path=/admin/**
+        - id: system
           uri: lb://system-manage
           predicates:
             - Path=/system/**
+        - id: activity
+          uri: lb://activity-manage
+          predicates:
+            - Path=/activity/**

@@ -30,5 +30,7 @@ build/
 ### VS Code ###
 .vscode/
 
-**/config/
-!**/src/**/config
+#私人配置
+**/application-personal.yml
+**/application-personal.ymal
+**/application-personal.properties
