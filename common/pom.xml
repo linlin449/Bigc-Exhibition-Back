@@ -19,6 +19,12 @@
         <nacos-discovery.version>2021.1</nacos-discovery.version>
     </properties>
     <dependencies>
+        <!--  缓存 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>

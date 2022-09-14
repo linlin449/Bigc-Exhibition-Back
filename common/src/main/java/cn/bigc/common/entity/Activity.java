@@ -25,7 +25,7 @@ public class Activity implements Serializable {
     /**
      * 活动开始时间
      */
-    @TableField("start_name")
+    @TableField("start_time")
     private Timestamp start_time;
 
     /**

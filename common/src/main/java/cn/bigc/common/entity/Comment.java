@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 /**
  * @author th1nk
@@ -36,5 +37,11 @@ public class Comment implements Serializable {
      */
     @TableField("activity_id")
     private Integer activity_id;
+
+    /**
+     * 评论时间
+     */
+    @TableField("create_time")
+    private Timestamp create_time;
 
 }
